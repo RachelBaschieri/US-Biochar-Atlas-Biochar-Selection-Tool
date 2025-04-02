@@ -161,7 +161,8 @@ def classify_soil(sand, silt, clay):
 
 # Function to get latitude and longitude of the user's zip code
 def get_lat_lon_from_zip(zip_code):
-    geolocator = Nominatim(user_agent="sdi_biochar_search_location3.py (rachel.baschieri@usda.gov)")
+    user_agent = os.getenv("GEOLOCATOR_USER_AGENT", "biochar_search_app")
+    geolocator = Nominatim(user_agent=user_agent)
     location = geolocator.geocode(zip_code)
     if location:
         return (location.latitude, location.longitude)
