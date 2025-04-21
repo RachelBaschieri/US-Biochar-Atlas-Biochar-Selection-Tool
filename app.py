@@ -9,7 +9,8 @@ import os
 # Load environment variables from .env file
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder='templates')
+
 
 # Securely retrieve secret key and database URL
 secret_key = os.getenv('SECRET_KEY')
