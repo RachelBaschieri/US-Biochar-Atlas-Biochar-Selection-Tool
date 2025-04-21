@@ -1,6 +1,11 @@
 # US-Biochar-Atlas-Biochar-Selection-Tool
 The tool takes in user-input soil test data and crop requirements to search the biochar characteristics database for biochar that meets the users soil health goals.
 
-
-# Load the sample database
+##To run the app on your computer, open Terminal or Putty
+1. Load in the sample database
 psql -U postgres -d practiceAtlas -f practiceAtlas_clean.sql
+2. Copy the example env file:
+cp .env.example .env
+3. Install dependencies:
+pip install -r requirements.txt
+4. Run the app:
