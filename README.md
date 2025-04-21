@@ -3,9 +3,10 @@ The tool takes in user-input soil test data and crop requirements to search the 
 
 ##To run the app on your computer, open Terminal or Putty
 1. Load in the sample database
-psql -U postgres -d practiceAtlas -f practiceAtlas_clean.sql
+  psql -U postgres -d practiceAtlas -f practiceAtlas_clean.sql
 2. Copy the example env file:
-cp .env.example .env
+  cp .env.example .env
 3. Install dependencies:
-pip install -r requirements.txt
+  pip install -r requirements.txt
 4. Run the app:
+  web: gunicorn -w 4 -b 0.0.0.0:8080 app:app
