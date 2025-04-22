@@ -2,9 +2,10 @@
 The tool takes in user-input soil test data and crop requirements to search the biochar characteristics database for biochar that meets the users soil health goals.
 
 #To run the app on your local machine
- 1. Clone the repository: ```bash git clone https://github.com/your-username/US-Biochar-Atlas-Biochar-Selection-Tool.git
+ 1. Clone the repository:
+    a. ```bash git clone https://github.com/your-username/US-Biochar-Atlas-Biochar-Selection-Tool.git
 
- cd US-Biochar-Atlas-Biochar-Selection-Tool
+    b. cd US-Biochar-Atlas-Biochar-Selection-Tool
 
 2. Make sure PostgreSQL is installed and psql is accessible from the command line then run the following:
  
@@ -12,15 +13,9 @@ The tool takes in user-input soil test data and crop requirements to search the 
   
    b. psql -U postgres -d practiceAtlas -f practiceAtlas_clean.sql (This command loads the .sql file into your database.)
 
-3. Copy the example env file:
+3. Copy the example env file: cp .env.example .env
 
- cp .env.example .env
-
-4. Open the .env in a text editor and update values as needed, e.g.:
-
- DATABASE_URL=postgresql://postgres:yourpassword@localhost:####/practiceAtlas
-
- SECRET_KEY=your_secret_key
+4. Open the .env in a text editor and update values as needed, e.g.: DATABASE_URL=postgresql://postgres:yourpassword@localhost:####/practiceAtlas (edit postgres to your username if you used a different one and input port#) SECRET_KEY=your_secret_key
 
 5. Create a virtual environment:
 
@@ -28,13 +23,9 @@ The tool takes in user-input soil test data and crop requirements to search the 
 
     b. source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-6. Install dependencies:
+6. Install dependencies: pip install -r requirements.txt
 
-  pip install -r requirements.txt
-
-7. Run the app:
-
-    flask run
+7. Run the app: flask run
 
 
 #Explanation of files
