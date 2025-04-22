@@ -15,7 +15,7 @@ The tool takes in user-input soil test data and crop requirements to search the 
 
 3. Copy the example env file: cp .env.example .env
 
-4. Open the .env in a text editor and update values as needed, e.g.: DATABASE_URL=postgresql://postgres:yourpassword@localhost:####/practiceAtlas (edit postgres to your username if you used a different one and input port#) SECRET_KEY=your_secret_key
+4. Open the .env in a text editor and update values as needed, e.g.: DATABASE_URL=postgresql://username:yourpassword@localhost:####/practiceAtlas (edit to add your username, password, and port#) SECRET_KEY=your_secret_key
 
 5. Create a virtual environment:
 
