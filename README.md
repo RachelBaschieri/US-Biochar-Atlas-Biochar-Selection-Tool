@@ -28,3 +28,5 @@ templates - contains the html template index.html
 app.py - the python code for the biochar selection tool
 runtime.txt - tells the python version to run this app with
 requirements.txt - lists all of the dependancies for running this app
+practiceAtlas_clean.sql - a sample biochar characteristics database
+.env.example - an example .env file to allow the app to access the biochar database
