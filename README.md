@@ -5,9 +5,9 @@ The tool takes in user-input soil test data and crop requirements to search the 
 1. Clone the repository: ```bash
 git clone https://github.com/your-username/US-Biochar-Atlas-Biochar-Selection-Tool.git
 cd US-Biochar-Atlas-Biochar-Selection-Tool
-2. Make sure PostgreSQL is installed and psql is accessible from the command line then load in the sample database:
-  createdb practiceAtlas
-  psql -U postgres -d practiceAtlas -f practiceAtlas_clean.sql
+2. Make sure PostgreSQL is installed and psql is accessible from the command line then run the following:
+  a. createdb practiceAtlas (This is run first to create the database called practiceAtlas. You may be prompted for a password. This is the password for your local PostgreSQL postgres user. If you haven't set one, you may need to. Set a password using psql -U postgres -c "ALTER USER postgres WITH PASSWORD 'yourpassword';", you may replace postgres with your own system user name.)
+  b. psql -U postgres -d practiceAtlas -f practiceAtlas_clean.sql (This command loads the .sql file into your database.)
 3. Copy the example env file:
   cp .env.example .env
 4. Open the .env in a text editor and update values as needed, e.g.:
