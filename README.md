@@ -25,7 +25,9 @@ The tool takes in user-input soil test data and crop requirements to search the 
 
 6. Install dependencies: pip install -r requirements.txt
 
-7. Run the app: flask run
+7. Run the app: venv/bin/python3 -m flask run
+
+8. Copy and paste the http string into your browser and go.
 
 
 #Explanation of files
