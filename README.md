@@ -23,10 +23,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 
 #Explanation of files
-static - contains css and json files for simple formating of the html
-templates - contains the html template index.html
-app.py - the python code for the biochar selection tool
-runtime.txt - tells the python version to run this app with
-requirements.txt - lists all of the dependancies for running this app
-practiceAtlas_clean.sql - a sample biochar characteristics database
-.env.example - an example .env file to allow the app to access the biochar database
+1. static - contains css and json files for simple formating of the html
+2. templates - contains the html template index.html
+3. app.py - the python code for the biochar selection tool
+4. runtime.txt - tells the python version to run this app with
+5. requirements.txt - lists all of the dependancies for running this app
+6. practiceAtlas_clean.sql - a sample biochar characteristics database
+7. .env.example - an example .env file to allow the app to access the biochar database
